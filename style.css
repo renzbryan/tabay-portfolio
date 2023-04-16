@@ -1,0 +1,545 @@
+
+
+/*  HOME PAGE   */
+
+*{
+  padding: 0%;
+  margin: 0%;
+  list-style: none;
+}
+
+.home{
+  background-color: #292929;
+  background-image: url(image/bg1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 80%;
+  position: absolute;
+  overflow: hidden;
+}
+
+.navbar {
+  list-style-type:circle ;
+  margin: 0;
+  padding-top: 15%;
+  overflow: hidden;  
+  float: left;
+  display:block;
+  position: absolute;
+}
+
+
+.logo{
+  display: flex;
+  margin: 0%;
+  align-items: center;
+  position:absolute;
+}
+
+.logo img{
+position: relative;
+padding-top: 0.5%;
+padding-left: 10%;
+margin: 0%;
+width: 55px;
+height: auto;
+filter: brightness(100%);
+}
+
+.logo p{
+  color: #ffffff09;
+  font-family: Bakbak One;
+  font-size: 2.3rem;
+  -webkit-text-stroke: .15vw rgb(255, 70, 70);;
+  animation-name: rgb2;
+  animation-duration: 5s ;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rgb2 {
+  0%   {-webkit-text-stroke-color: rgb(249, 2, 2);}
+  25%  {-webkit-text-stroke-color: rgb(230, 0, 0);}
+  50%  {-webkit-text-stroke-color: rgb(177, 0, 0);}
+  100% {-webkit-text-stroke-color: rgb(249, 2, 2);}}
+
+li a {
+  display: block;
+  color: white;
+  padding: 8px 40px;
+  text-decoration: none;
+  font-family: Anton;
+  font-size: 30px;
+}
+
+.active{
+  color: rgb(255, 70, 70);
+  font-size: 50px;
+}
+
+li a:hover {
+  background-color: #1f1f1f77;
+}
+
+img{
+  position: relative;
+  width: 458px;
+  height: auto;
+  margin-left: 52%;
+  margin-top: 6.5%;
+  filter: grayscale(50%);
+  
+}
+
+.me{
+  display:block;
+  margin-top: 17%;
+  margin-left: 300px;
+  line-height: 1;
+  position: absolute;
+}
+
+h1{
+  font-size: 10rem;
+  font-family: 'Anton', sans-serif;
+  color: #29292900;
+  padding-bottom: 3%;
+  right: 1%;
+  position: relative;
+  height: 0%;
+  -webkit-text-stroke: 0.1vw brown;
+  }
+
+  h1::before{
+    content: attr(data-text);
+    position:absolute;
+    top: 0%;
+    left: 0%;
+    width: 0%;
+    height: 80%;
+    padding-bottom: 2%;
+    color: brown;
+    -webkit-text-stroke: 0vw #292929;
+    overflow: hidden;
+    animation: animate 8s linear infinite;
+  }
+
+  @keyframes animate{
+    0%, 10%, 10%{
+        width: 0;
+    }
+    70%, 90%{
+        width: 100%;
+    }
+  }
+.me p{
+  
+  font-size: 88px;
+  color: white;
+  font-family: 'Bakbak One', cursive;
+  animation-name: rgb;
+  animation-duration: 10s ;
+  animation-iteration-count: infinite;
+
+  }
+
+  @keyframes rgb {
+    0%   {color: rgb(255, 209, 209);}
+    25%  {color: rgb(209, 255, 218);}
+    50%  {color: rgb(209, 209, 255);}
+    100% {color: rgb(255, 209, 209);}
+  }
+  
+  .ako{
+    font-size: 2.8rem;
+    color: rgb(34, 174, 189);
+    font-family: Sen;
+    margin: 0%;
+    padding-bottom: 0%;
+  }
+
+  .ako::before{
+    content: attr(data-me1);
+    overflow: hidden;
+    display: inline-flex;
+    position: relative;
+    animation: 
+      effectText 4s linear infinite alternate,
+      changeText 16s linear infinite 
+  }
+
+  @keyframes effectText{
+    from{
+      max-width: 0;
+    }to{
+      max-width: 600px;
+    }
+  }
+  
+  @keyframes changeText{
+    0%{
+      content: attr(data-me1);
+    }
+    100%{
+      content: attr(data-me2);
+    }
+  }
+
+  .dropbtn {
+    background-color: brown;
+    color: white;
+    padding: 15px 45px 15px 44px;
+    font-size: 16px;
+    font-family: Sen;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    margin-top: 11%;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+    transition: 0.2s;
+  }
+
+  .dropdown {
+    position: relative;
+    display: block;
+    float: right;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: transparent;
+    min-width: 147px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.342);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover{
+    background-color: rgba(240, 248, 255, 0.272);
+    text-decoration:underline;
+    border-bottom-left-radius: 8px;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+    border-bottom-left-radius: 8px;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: rgb(189, 21, 21);
+    box-shadow: 1px 0px 7px 2px rgba(249, 124, 124, 0.598);
+    border-bottom-left-radius: 8px;
+  }
+
+  /*  ABOUT  */
+
+  *{
+    text-decoration: none;
+  }
+  .about{
+    font-family: Arial;
+    color: white;
+    background-color: rgb(236, 236, 236);
+
+  }
+  
+  .split {
+    height: 100vh;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .left {
+    left: 0;
+    background-color: rgb(255, 66, 66);
+    width: 90vh;
+    background-image: url(image/bg3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+  
+  .right {
+    right: 0;
+    background-color: rgb(236, 236, 236);
+    width: 125vh;
+    overflow: scroll;
+
+  }
+  
+  .infos {
+    position: absolute;
+    top: 55%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+  }
+
+  .infos h2{
+    color: rgb(24, 24, 24) ; 
+    font-family: Anton;
+    font-size: 4rem;
+  }
+
+  .infos p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 130%;
+    text-align: justify;
+  }
+
+  .btn_back{
+    margin: 5%;
+    text-decoration: none;
+    font-family: Bakbak One;
+    color: azure;
+    font-size: larger;
+  }
+
+  .btn_back:hover{
+    color: rgb(0, 0, 0);
+    transition: 0.15s;
+  }
+  
+  .centered{
+    width: 80%;
+    height: auto;
+    filter: grayscale(50%);
+    position: relative;
+  }
+  .one{
+    font-family: Anton;
+    padding-left: 9%;
+    padding-top: 12.3%;
+    position: absolute;
+    color: transparent;
+    -webkit-text-stroke: 0.4vw gold;
+    font-size: 10rem;
+    line-height: 100%;
+  }
+
+
+  
+
+h3{
+  margin: 5px;
+}
+
+.graph{
+  width: 500px;
+  margin: 60px auto;
+  color: #151515;
+  padding: 20px;
+  box-shadow: 0 14px 28px rgba(255, 254, 254, 0.25), 0 10px 10px rgba(0,0,0,0.22);
+  border-radius: 30px;
+  background-color: #f4f3f3;
+}
+.graph p{
+  text-align: center;
+  font-size: x-large;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+  ;
+}
+.graph li{
+  margin: 20px 0;
+  padding: 10px;
+
+}
+.graph h3{
+  text-decoration: none;
+  overflow: hidden;
+}
+span{
+  color: #f4f3f3;
+  font-size: 1rem;
+  margin-right: 2%;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: 10;
+}
+
+.bar{
+  background: #464646;
+  display: block;
+  height: 20px;
+  border: 1px solid rgba(0,0,0,0.3);
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+
+}
+.bar:hover{
+  box-shadow: 0 7px 7px rgba(0, 0, 0, 0.381), 0 10px 10px rgb(247, 242, 242);
+}
+
+.bar span{
+  height: 20px;
+  float: left;
+  background: linear-gradient(135deg, rgb(177, 17, 17)0%, rgb(41, 155, 249)100%);
+}
+
+.photoshop{
+  width: 90%;
+  animation: photoshop 3s;
+}
+
+.javascript{
+  width: 70%;
+  animation: javascript 3s;
+}
+
+.php{
+  width: 60%;
+  animation: php 3s;
+}
+
+.blender{
+  width: 50%;
+  animation: blender 3s;
+}
+
+@keyframes photoshop{
+  0%{
+      width: 0%;
+  }
+  100%{
+      width: 90%;
+  }
+}
+@keyframes javascript{
+  0%{
+      width: 0%;
+  }
+  100%{
+      width: 70%;
+  }
+}
+@keyframes php{
+  0%{
+      width: 0%;
+  }
+  100%{
+      width: 60%;
+  }
+}
+@keyframes blender{
+  0%{
+      width: 0%;
+  }
+  100%{
+      width: 50%;
+  }
+}
+
+    /* PROJECTS */
+
+.proj_page{
+  background-color: #252525;
+}
+.logo_abt{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo_abt img{
+  width: 60px;
+  height: auto;
+  margin-left: 0%;
+  margin-top: 0%;
+  filter:grayscale(100%)
+}
+.logo_abt p {
+  color: #f8f8f8;
+  font-family: Anton;
+  font-size: 2rem;
+}
+
+.prj{
+  color: #f4f3f3;
+  font-family:Sen;
+  font-size: 1.7rem;
+  margin-top: 5%;
+  margin-bottom: 2%;
+  margin-left: 3%;
+  font-weight: bold;
+  display: inline;
+
+}
+
+.pic{
+  margin: 2%;
+  padding: 2%;
+  background-color: #383737;
+  border-radius: 20px;
+  justify-content: space-around;
+}
+
+.pic img{
+  width: 380px;
+  height: 230px;
+  margin:0%;
+  padding: 0%;
+  border: #bababa 2px solid;
+  border-radius: 10px;
+
+}
+
+.pic .LyriKo:hover{
+  border: #ffffff 5px solid;
+  width: 375px;
+  height: 224.5px;
+  filter: contrast(100%);
+  transition: 0.15s;
+  box-shadow: 1px 0px 7px 5px rgba(141, 249, 124, 0.598);
+}
+
+.pic .tj:hover{
+  border: #ffffff 5px solid;
+  width: 375px;
+  height: 224.5px;
+  filter: contrast(100%);
+  transition: 0.15s;
+  box-shadow: 1px 0px 7px 5px rgba(72, 72, 255, 0.598);
+}
+
+.pic .dex:hover{
+  border: #ffffff 5px solid;
+  width: 375px;
+  height: 224.5px;
+  filter: contrast(100%);
+  transition: 0.15s;
+  box-shadow: 1px 0px 7px 5px rgba(142, 38, 38, 0.598);
+}
+.pic .ange:hover{
+  border: #ffffff 5px solid;
+  width: 375px;
+  height: 224.5px;
+  filter: contrast(100%);
+  transition: 0.15s;
+  box-shadow: 1px 0px 7px 5px rgba(0, 242, 255, 0.598);
+}
+
+.btn_rtn{
+  margin-left: 3%;
+  margin-bottom: 3%;
+  text-decoration: none;
+  font-family: Bakbak One;
+  color: azure;
+  font-size: larger;
+}
+.btn_rtn:hover{
+  color: rgb(0, 0, 0);
+  transition: 0.15s;
+}
